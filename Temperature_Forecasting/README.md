@@ -12,15 +12,16 @@ The dataset used in this project contains historical surface temperature data fo
 - The data is then resampled to monthly frequency and missing values are dropped.
 
 ## Exploratory Data Analysis (EDA)
+Box plots,Histograms and Scatter plots are used to visualize the distribution of temperature data. Here are the different plots using them for analysis- 
 - Box plots
   ![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/ee947db5-65f3-4082-a5a7-00c0e963adef)
 
-- histograms
+- Histograms
 ![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/d02e9ed8-e9fe-4abc-934d-4bee1ff69162)
 
-   scatter plots are used to visualize the distribution of temperature data. ![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/67168084-bd80-4362-ae13-ee8f2d833b97)
+  -Scatter plots  ![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/67168084-bd80-4362-ae13-ee8f2d833b97)
 
-- ![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/686714ef-a140-4e63-bebb-6bbac964f220)
+ ![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/686714ef-a140-4e63-bebb-6bbac964f220)
 
 - Rolling mean is calculated to observe trends in temperature over time.
 - Seasonal decomposition is performed to analyze trend, seasonality, and residuals.
