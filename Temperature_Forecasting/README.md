@@ -16,19 +16,32 @@ The dataset used in this project contains historical surface temperature data fo
 - Rolling mean is calculated to observe trends in temperature over time.
 - Seasonal decomposition is performed to analyze trend, seasonality, and residuals.
 
-## Statistical Forecasting (ARIMA)
-- ARIMA model is fitted to the training data to capture time-series patterns.
+## Statistical Forecasting (SARIMAX)
+![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/7e512dca-c1b6-47e6-ad78-a87d51413fd2)
+
+- SARIMAX model is fitted to the training data to capture time-series patterns.
 - The model is tuned using auto_arima for optimal parameters.
 - Forecasting is done for future time periods, and confidence intervals are calculated.
 - The performance of the ARIMA model is evaluated using Mean Squared Error (MSE) and Root Mean Squared Error (RMSE).
 
 ## Machine Learning Forecasting (LSTM)
+![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/954e40a2-3f2e-413b-a184-dd1a2a6a4db1)
+
 - LSTM model architecture is designed for sequence prediction.
 - TimeseriesGenerator is used to generate input-output pairs for the LSTM model.
 - The model is trained on the training data using MSE loss and Adam optimizer.
 - Model checkpoints are saved to track the best performing model during training.
 - LSTM model is trained for multiple epochs to capture temporal dependencies.
-
+  
+## SARIMAX vs LSTM Model Performance ##  
+![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/77601864-ccf8-41ff-95ce-2f2ed47b65b9)
+**<u>SARIMAX Model</u>**
+The SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous regressors) model is a linear statistical model that is widely used for time series forecasting. It incorporates both autoregression (AR) and moving average (MA) elements, and can handle trends and seasonality in the data.
+In this case, the SARIMAX model achieved an RMSE (Root Mean Square Error) value of **0.9**. The RMSE is a measure of the differences between the values predicted by the model and the actual values. Lower RMSE values indicate better fit. **Therefore, an RMSE of 0.9 suggests that the SARIMAX model has performed quite well**.
+**<u>LSTM Model</u>**
+On the other hand, the LSTM (Long Short-Term Memory) model is  a type of recurrent neural network (RNN) that is capable of learning long-term dependencies, which makes it suitable for time series forecasting.
+     However, in your case, the LSTM model achieved an RMSE value of **1.14**, which is higher than that of the SARIMAX model. **This suggests that the LSTM model’s predictions were, on average, slightly less accurate than those of the SARIMAX model.**
+    
 ## Streamlit Implementation
 - The model has been implemented into a Streamlit web application (`app.py`).
 - Users can input a date to get a temperature prediction.
