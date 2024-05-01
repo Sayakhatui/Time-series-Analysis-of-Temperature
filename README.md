@@ -54,8 +54,12 @@ On the other hand, the LSTM (Long Short-Term Memory) model is  a type of recurre
     
 ## Streamlit Implementation
 - The model has been implemented into a Streamlit web application (`app.py`).
+  ![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/47fe72ef-9326-406c-aee7-80b22227f1f0)
+
 - Users can input a date to get a temperature prediction.
 - Users can also input a range of dates to plot the temperature vs. time graph.
+  ![image](https://github.com/Sayakhatui/Time-series-Analysis-of-Temperature/assets/150340995/5cd1094a-f6b0-45f4-8511-d8523def8ae2)
+
 
 ## Results
 - Forecasted temperatures from both ARIMA and LSTM models are visualized and compared with observed temperatures.
